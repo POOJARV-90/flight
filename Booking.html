@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://kit.fontawesome.com/487f0ebb06.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
@@ -12,18 +13,21 @@
         }
         #body{
             width: 100%;
-            border: 1px solid black;
-            height: 700px;
+            /* border: 1px solid black; */
+            height: 100%;
+            /* height: 700px; */
             font-family: Arial, Helvetica, sans-serif;
         }
 
          #navbar{
             width: 100%;
-            border: 1px solid black;
-            height: 70px;
+            /* border: 1px solid black; */
+            /* height: 70px; */
             position: fixed;
             top: 0;
-            background-color: #17a2b7;
+            background-color: #1289d8cc;
+            background:#0e7bc4cc ;
+            z-index: 1;
         }
          #navbar>div{
              width: 80%;
@@ -62,9 +66,11 @@
           }
 
           #Booking{
-            margin-top: 5.1%;
-            border: 1px solid red;
-            height: 500px;
+            margin-top: 6%;
+            /* border: 1px solid red; */
+            /* height: 500px; */
+            opacity: 100%;
+
           }
           #form-body{
             background-image: url("http://www.addcovers.com/covers/bqoobouo4mx9chq.jpg");
@@ -73,7 +79,6 @@
             background-size: cover;
             background-position: center;
             padding-top: 5%;
-   
            
 
           }
@@ -86,6 +91,156 @@
     opacity: 100%;
     border-radius: 8px;
           }
+          #form-body>div>h2{
+            text-align: center;
+          }
+
+          form{
+            width: 85%;
+            background-color: white;
+            height: 200px;
+            margin: auto;
+            border-radius: 8px;
+            margin-top: 4%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+          }
+
+          form>label{
+            color: red;
+            font-size: 1.2em;
+          }
+
+          form>input{
+            padding: 1%;
+            width: 250px;
+          }
+
+          form>div{
+            /* border: 1px solid red; */
+            padding-top: 3%;
+            height: 100px;
+            width: 22%;
+          }
+          form>div>label{
+            font-size: 18px;
+            color: rgb(13, 16, 58);
+
+          }
+
+          form>div>input{
+            padding: 8px 10px;
+            margin-top: 15px;
+            width: 100%;
+          }
+
+          form>div:last-child{
+            width: 100%;
+            position: relative;
+            font-size: 18px;
+          }
+
+          form>div:last-child>div>button{
+            position: absolute;
+            right: 0%;
+            font-size: 18px;
+            color: white;
+            background-color: #559dcd;
+            padding: 9px 35px;
+            border-radius: 6px;
+            border: none;
+            margin-right: 2.5%;
+          }
+          form>div:last-child>div>label{
+           margin-left: 20px;
+          }
+
+          form>div:last-child>div>input{
+           margin-left: 5px;
+           
+          }
+
+          #other{
+            width: 100%;
+            /* border: 1px solid red; */
+            height: 300px;
+            margin: auto;
+            margin-top: 5%;
+          }
+
+          #other>div{
+            width: 70%;
+            /* border: 1px solid red; */
+            /* height: 300px; */
+            margin: auto;
+          }
+
+          #other>div>h2:nth-child(1){
+            text-align: center;
+            margin-top: 3%;
+
+          }
+
+          #other>div>div:nth-child(2){
+            border: 1px solid rgb(180, 171, 171);
+            margin-top: 5%;
+            /* text-align: center; */
+            display: flex;
+            width: 100%;
+            align-items: center;
+            padding: 2%;
+            border-radius: 5px;
+          }
+
+          /* #other>div>div:nth-child(2)>div{
+            /* text-align: center; */
+            /* display: flex; */
+            /* width: 100%; */
+            /* border: 1px solid red; */
+            /* width: auto; */
+          
+
+          #other>div>div:nth-child(2)>div:nth-child(2){
+            width: 50%;
+          }
+
+          #other>div>div:nth-child(2)>div:nth-child(2)>p:nth-child(1){
+            width: 90%;
+            height: 60px;
+            font-size: large;
+    overflow: hidden;
+  word-wrap: break-word;
+  /* border: 1px solid red; */
+          }
+
+          #other>div>div:nth-child(2)>div:nth-child(1),div:nth-child(3){
+            width: 25%;
+            padding: 4%;
+          }
+
+          #other>div>div:nth-child(2)>div:nth-child(3)>button{
+           
+           padding: 5px 30px;
+           background-color: transparent;
+           border: 2px solid #0f525c;
+           color: #0f525c;
+           border-radius: 3px;
+           margin-top: 2%;
+          
+          }
+
+          #logo{
+            width: 60%;
+            height: 100px;
+            margin: auto;
+            border: 1px solid red;
+          }
+
+
+  
+
+
           
     </style>
 </head>
@@ -114,8 +269,127 @@
         
         <div id="form-body">
 
-            <div></div>
+            <div>
+              <h2>Flights</h2>
+
+              <form action="">
+
+                <div>
+                  <label for="">From</label> <br> 
+                  <input type="number">
+                </div>
+
+                <div>
+                  <label for="">To</label> <br> 
+                  <input type="number">
+                </div>
+
+                <div>
+                  <label for="">Depature Date</label> <br> 
+                  <input type="date">
+                </div>
+
+                <div>
+                  <label for="">Return Date </label> <br> 
+                  <input type="date">
+                </div>  
+
+                <div>
+                  <div>
+
+                    <label for="">Return Date </label>  
+                    <input type="radio">
+
+                    <label for="">Return Date </label>  
+                    <input type="radio">
+
+                    <button> <i class="fa-solid fa-plane-departure"></i>Find Flights</button>
+                    
+                  </div>
+
+
+                </div>  
+
+
+              </form>
+
+
+
+            </div>
+
+           
                 
+
+        </div>
+        
+        <div id="other">
+
+       <!-- ..............start here........................    -->
+          <div>
+            <h2>Flight Available</h2>
+            <div>
+
+              <div>
+                <div id="logo">
+
+                </div>
+              </div>
+              <div>
+                <p>Dubai  International , Garlond , Dubai-Los Angeles, International Airport,Los Angeles,Californaia  </p>
+
+                <p>Airlines: <b>Air Asia</b></p>
+                <p>Depature: <b>06:56 PM</b></p>
+                <p>Arrival: <b>July 16,2023 06:56 PM</b></p>
+                <p>Available Seats: <br> <h1> 54</h2></h1>
+              
+
+              </div>
+              <div>
+
+                <h2>56,6666.00</h2>
+                <button>Book Now</button>
+
+
+              </div>
+            </div>
+
+          </div>
+
+           <!-- ..............end here........................    -->
+
+          <div>
+            <h2>Flight Available</h2>
+            <div>
+
+              <div>
+                <div id="logo">
+
+                </div>
+              </div>
+              <div>
+                <p>Dubai  International , Garlond , Dubai-Los Angeles, International Airport,Los Angeles,Californaia  </p>
+
+                <p>Airlines: <b>Air Asia</b></p>
+                <p>Depature: <b>06:56 PM</b></p>
+                <p>Arrival: <b>July 16,2023 06:56 PM</b></p>
+                <p>Available Seats: <br> <h1> 54</h2></h1>
+              
+
+              </div>
+              <div>
+
+                <h2>56,6666.00</h2>
+                <button>Book Now</button>
+
+
+              </div>
+            </div>
+
+          </div>
+
+         
+
+
 
         </div>
 
